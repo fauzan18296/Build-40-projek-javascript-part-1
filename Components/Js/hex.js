@@ -1,5 +1,6 @@
 const hexColors = [1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 const btn = document.getElementById("btn");
+const brandText = document.querySelector(".brand-text")
 const colorText = document.querySelector(".color-text");
 
 btn.addEventListener("click", () => {
@@ -10,4 +11,5 @@ btn.addEventListener("click", () => {
  }
  document.body.style.backgroundColor = hex;
  colorText.textContent = hex;
+ brandText.style.color = hex
 })
